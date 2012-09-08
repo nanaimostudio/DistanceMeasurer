@@ -14,6 +14,7 @@
 
 #pragma mark - UITextFieldDelegate methods
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
     return YES;
 }
 
@@ -47,6 +48,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     rscMgr = [[RscMgr alloc] init];
     [rscMgr setDelegate:self];
+    [inputText setDelegate:self];
 }
 
 - (void)viewDidUnload
@@ -88,8 +90,11 @@
     [self.inputText resignFirstResponder];
     NSString *text = self.inputText.text;
     int bytesToWrite = text.length;
-    for ( int i = 0; i < bytesToWrite; i++ ) {
-        txBuffer[i] = (int)[text characterAtIndex:i]; }
+    for ( int i = 0; i < bytesToWrite; i++ )
+    {
+        txBuffer[i] = (int)[text characterAtIndex:i];
+    }
+    [rscMgr write:txBuffer Length:bytesToWrite];
 }
 
 

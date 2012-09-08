@@ -24,10 +24,10 @@
 		16167525156F2C57008206B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		16167527156F2C57008206B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		16167529156F2C57008206B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1616752D156F2C57008206B0 /* iDeviceConsoleTest-Info.plist */ = {isa = PBXFileReference; path = "iDeviceConsoleTest-Info.plist"; sourceTree = "<group>"; };
+		1616752D156F2C57008206B0 /* iDeviceConsoleTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDeviceConsoleTest-Info.plist"; sourceTree = "<group>"; };
 		1616752F156F2C57008206B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		16167531156F2C57008206B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		16167533156F2C57008206B0 /* iDeviceConsoleTest-Prefix.pch */ = {isa = PBXFileReference; path = "iDeviceConsoleTest-Prefix.pch"; sourceTree = "<group>"; };
+		16167533156F2C57008206B0 /* iDeviceConsoleTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDeviceConsoleTest-Prefix.pch"; sourceTree = "<group>"; };
 		16167534156F2C57008206B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16167535156F2C57008206B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		16167537156F2C57008206B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		16167518156F2C57008206B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 1616751B156F2C57008206B0 /* Build configuration list for PBXProject "iDeviceConsoleTest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -248,6 +248,7 @@
 		16167540156F2C57008206B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Le Zeng (24R23XB664)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDeviceConsoleTestLe/iDeviceConsoleTest-Prefix.pch";
 				INFOPLIST_FILE = "iDeviceConsoleTestLe/iDeviceConsoleTest-Info.plist";
@@ -256,6 +257,7 @@
 					"\"$(SRCROOT)/iDeviceConsoleTestLe\"",
 				);
 				PRODUCT_NAME = iDeviceConsoleTest;
+				PROVISIONING_PROFILE = "9225257F-BFBF-4411-BA1A-B6B6AD18C5F7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -263,6 +265,7 @@
 		16167541156F2C57008206B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Le Zeng (24R23XB664)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDeviceConsoleTestLe/iDeviceConsoleTest-Prefix.pch";
 				INFOPLIST_FILE = "iDeviceConsoleTestLe/iDeviceConsoleTest-Info.plist";
@@ -271,6 +274,7 @@
 					"\"$(SRCROOT)/iDeviceConsoleTestLe\"",
 				);
 				PRODUCT_NAME = iDeviceConsoleTest;
+				PROVISIONING_PROFILE = "9225257F-BFBF-4411-BA1A-B6B6AD18C5F7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
